@@ -1,0 +1,130 @@
+@import "../abstracts/_mixin";
+
+.layout-wrap {
+  min-height: 100vh;
+  .layout-wrap-inner {
+    .section-menu-left {
+      position: fixed;
+      z-index: 50;
+      top: 141px;
+      left: 20px;
+      bottom: 20px;
+      width: 331px;
+      border-radius: 24px;
+      padding: 40px;
+      background-color: var(--Fourth);
+      opacity: 1;
+      visibility: visible;
+      @include transition3;
+      .menu-content {
+        height: 100%;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+        ul {
+          @include d-flex();
+          flex-direction: column;
+          gap: 10px;
+          li {
+            @include transition3;
+            border-radius: 12px;
+            a {
+              @include flex(center, flex-start);
+              gap: 10px;
+              height: 60px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              color: var(--White);
+              padding-left: 20px;
+              i {
+                font-size: 20px;
+              }
+            }
+            &.active,
+            &:hover {
+              background: #ffffff0d;
+            }
+          }
+        }
+      }
+    }
+    .section-content-right {
+      flex-grow: 1;
+      padding-left: 371px;
+      padding-top: 121px;
+      @include transition3;
+      > h3 {
+        margin-top: 31px;
+        margin-bottom: 5px;
+      }
+      > .text-content {
+        margin-bottom: 33px;
+      }
+      > .bottom-page {
+        padding: 32px 0 11px;
+        p {
+          text-align: center;
+        }
+      }
+      form {
+        .nice-select {
+          > .list {
+            max-width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-canvas {
+  position: fixed;
+  top: 141px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  @include flex(center, center);
+  background-color: var(--White);
+  cursor: pointer;
+  @include transition3;
+  display: none;
+  .text-content {
+    display: none;
+  }
+  span {
+    width: 23px;
+    height: 10px;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: var(--Secondary);
+      @include transition3;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+  &.active {
+    left: 351px;
+    span {
+      &::before {
+        transform: rotate3d(0, 0, 1, 45deg);
+        top: 50%;
+      }
+      &::after {
+        transform: rotate3d(0, 0, 1, -45deg);
+        top: 50%;
+      }
+    }
+  }
+}

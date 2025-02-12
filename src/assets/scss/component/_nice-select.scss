@@ -1,0 +1,102 @@
+.nice-select {
+    border-radius: 12px;
+    border: 1px solid var(--Border) !important;
+    padding: 12px 20px;
+    &.border-radius-1 {
+        border-radius: 120px;
+        padding: 12.5px 25px;
+    }
+    &::after {
+        right: 27px;
+        border-color: var(--Secondary);
+    }
+    > span {
+        font-weight: 400;
+        font-size  : 15px;
+        line-height: 28px;
+        color      : var(--Secondary);
+    }
+    > .list {
+        margin-top: 10px;
+        border: 1px solid var(--Secondary);
+        border-radius: 16px;
+        max-height: unset;
+        padding: 28px 20px 20px 21px;
+        max-width: 300px;
+        .option {
+            height: 41px;
+            padding: 0 15px;
+            border-radius: 12px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 41px;
+            color: var(--Secondary);
+            position: relative;
+            &.selected {
+                color: var(--Secondary);
+                font-weight: 400;
+                &::after {
+                    position: absolute;
+                    font-family: flaticon_just-home !important;
+                    content: "\f125";
+                    right: 18px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &.style-radio {
+            padding: 28px 20px 30px 21px;
+            .option {
+                padding-left: 50px;
+                height: 50px;
+                line-height: 50px;
+                &::after {
+                    position: absolute;
+                    left: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid var(--Border);
+                }
+                &.selected {
+                    &::after {
+                        border: 4px solid var(--Secondary);
+                    }
+                }
+            }
+        }
+    }
+    &.open {
+        border-color: var(--Secondary) !important;
+        z-index: 50;
+    }
+    &.style-white {
+        span {
+            &.current {
+                color: var(--White) !important;
+            }
+        }
+        &::after {
+            border-color: var(--White) !important;
+        }
+    }
+    &.default {
+        padding: 0;
+        padding-right: 18px;
+        border: 0 !important;
+        &::after {
+            right: 0;
+            top: 44%;
+            right: 2px;
+        }
+        ul.list {
+            width: 220px;
+            right: 0;
+            left: unset;
+        }
+    }
+}

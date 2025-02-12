@@ -1,0 +1,326 @@
+@import "../abstracts/_mixin";
+
+.tf-button-default {
+  @include flex(center, center);
+  gap: 10px;
+  padding: 10px 24px;
+  border: 1px solid var(--Secondary);
+  border-radius: 120px;
+  color: var(--Secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  @include transition3;
+  &:hover {
+    background-color: var(--Secondary);
+    color: var(--White);
+  }
+  &.style-white {
+    color: var(--White);
+    border-color: var(--White);
+    &:hover {
+      background-color: var(--White);
+      color: var(--Secondary);
+    }
+  }
+  &.style-blue {
+    background-color: var(--White);
+    border-color: var(--Fourth);
+    color: var(--Fourth);
+    &:hover {
+      color: var(--White);
+      background-color: var(--Fourth);
+    }
+    &.active {
+      color: var(--White);
+      background-color: var(--Fourth);
+      &:hover {
+        background-color: #112e29;
+      }
+    }
+  }
+  &.type-1 {
+    background-color: #f7f6f7;
+    border-color: #f7f6f7;
+    &:hover {
+      background-color: var(--Secondary);
+      color: var(--White);
+    }
+  }
+}
+
+.tf-button-no-bg {
+  position: relative;
+  width: max-content;
+  @include flex(center, center);
+  gap: 10px;
+  color: var(--Secondary);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  @include transition3;
+  i {
+    font-size: 18px;
+  }
+  &:hover {
+    i {
+      animation: 0.3s link-icon linear;
+      color: var(--Primary);
+    }
+  }
+  &.style-white {
+    color: var(--White);
+    i {
+      color: var(--White);
+    }
+  }
+}
+
+.tf-button-bg {
+  @include flex(center, center);
+  gap: 13px;
+  border-radius: 44px;
+  padding: 13px 30px;
+  background-color: #ffffff0d;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--White);
+  &:hover {
+    background-color: #ffffff40;
+  }
+  &.type-secondary {
+    background-color: var(--Secondary) !important;
+  }
+}
+
+.tf-button-green {
+  @include flex(center, center);
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background-color: var(--Fourth);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--White);
+  i {
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: #1e302d;
+    color: var(--White);
+  }
+}
+
+.tf-button-primary {
+  @include flex(center, center);
+  width: max-content;
+  gap: 10px;
+  padding: 18px 26px;
+  border-radius: 12px;
+  border: 0;
+  background-color: #e7c873;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+  @include transition3;
+  i {
+    font-size: 18px;
+  }
+  &.active,
+  &:hover {
+    background-color: #d9b75a;
+    color: var(--Secondary);
+    i {
+      animation: 0.3s link-icon linear;
+    }
+  }
+  &.style-green {
+    background-color: #254ef0;
+    color: var(--White);
+    &:hover {
+      background-color: #0a36e1;
+    }
+  }
+  &.style-blue {
+    background-color: var(--Fourth);
+    color: var(--White);
+    &:hover {
+      background-color: #112e29;
+    }
+  }
+  &.style-bg-white {
+    background-color: var(--White);
+    border: 1px solid var(--Primary);
+    &.active,
+    &:hover {
+      background-color: #d9b75a0d;
+    }
+  }
+  &.style-black {
+    background-color: var(--Secondary);
+    color: var(--White);
+    &.active,
+    &:hover {
+      background-color: var(--Fourth);
+    }
+  }
+  &.type-1 {
+    padding: 17px 26px;
+    border: 1px solid var(--Secondary);
+    border-radius: 120px;
+  }
+}
+
+.tf-button-filter {
+  @include flex(center, center);
+  gap: 10px;
+  padding: 16px 30px;
+  border: 1px solid var(--Border);
+  border-radius: 12px;
+  color: var(--Secondary);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+  @include transition3;
+  i {
+    font-size: 18px;
+  }
+  &.border-radius {
+    border-radius: 120px;
+  }
+}
+
+.button-arrow-right {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  @include flex(center, center);
+  background-color: var(--White);
+  @include transition3;
+  i {
+    font-size: 18px;
+    color: var(--Secondary);
+  }
+  &:hover {
+    i {
+      animation: 0.3s link-icon linear;
+    }
+  }
+  &.style-third {
+    background-color: var(--Third);
+    i {
+      color: var(--White);
+    }
+  }
+}
+
+.tf-button-icon-before {
+  @include flex(center, center);
+  padding-right: 20px;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--Secondary);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--White);
+    border-radius: 50px;
+    @include transition3;
+    z-index: 0;
+  }
+  span {
+    position: relative;
+  }
+  i {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--Secondary);
+    @include flex(center, center);
+    @include transition3;
+  }
+  &:hover {
+    i {
+      color: var(--Primary);
+    }
+    &::before {
+      width: 100% !important;
+    }
+  }
+  &.style-1 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    gap: 10px;
+    padding-right: 0;
+    i {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      border-radius: 40px;
+      background-color: #f9f9f9;
+    }
+    .title {
+      position: relative;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &:hover {
+      color: var(--Third);
+      i {
+        color: var(--Third);
+      }
+    }
+  }
+}
+
+.tf-button-other {
+  @include flex(center, flex-start);
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--Secondary);
+  .icon {
+    @include d-flex();
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background-color: var(--White);
+    border: 1px solid var(--Border);
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      background-color: var(--Secondary);
+      @include center(-50%, -50%);
+      width: 8px;
+      height: 1px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      background-color: var(--Secondary);
+      @include center(-50%, -50%);
+      height: 8px;
+      width: 1px;
+    }
+  }
+}

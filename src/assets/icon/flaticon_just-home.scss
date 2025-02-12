@@ -1,0 +1,371 @@
+$flaticon_just-home-font: "flaticon_just-home";
+
+@font-face {
+  font-family: $flaticon_just-home-font;
+  src: url("./flaticon_just-home.woff2?bcabe8f370f3f7a2c30bee5609823352")
+      format("woff2"),
+    url("./flaticon_just-home.woff?bcabe8f370f3f7a2c30bee5609823352")
+      format("woff"),
+    url("./flaticon_just-home.eot?bcabe8f370f3f7a2c30bee5609823352#iefix")
+      format("embedded-opentype"),
+    url("./flaticon_just-home.ttf?bcabe8f370f3f7a2c30bee5609823352")
+      format("truetype"),
+    url("./flaticon_just-home.svg?bcabe8f370f3f7a2c30bee5609823352#flaticon_just-home")
+      format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+  font-family: flaticon_just-home !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_just-home-map: (
+  "user": "\f101",
+  "phone": "\f102",
+  "magnifiying-glass": "\f103",
+  "filter": "\f104",
+  "arrow-down-sign-to-navigate": "\f105",
+  "location": "\f106",
+  "hotel": "\f107",
+  "bath-tub": "\f108",
+  "bathtub": "\f109",
+  "minus-front": "\f10a",
+  "heart": "\f10b",
+  "heart-1": "\f10c",
+  "search-house": "\f10d",
+  "seller": "\f10e",
+  "buy-home": "\f10f",
+  "website": "\f110",
+  "computer": "\f111",
+  "house": "\f112",
+  "rating": "\f113",
+  "customer": "\f114",
+  "house-1": "\f115",
+  "back": "\e632",
+  "shield": "\f116",
+  "home": "\f117",
+  "online-meeting": "\f118",
+  "key": "\f119",
+  "rental": "\f11a",
+  "play": "\f11b",
+  "twitter": "\f11c",
+  "linkedin": "\f11d",
+  "facebook": "\f11e",
+  "instagram": "\f11f",
+  "bungalow": "\f120",
+  "cottage": "\f121",
+  "buildings": "\f122",
+  "building": "\f123",
+  "office-building": "\f124",
+  "check": "\f125",
+  "paper-plane": "\f126",
+  "message": "\f127",
+  "pdf": "\f128",
+  "tag": "\f129",
+  "star": "\f12a",
+  "star-1": "\f12b",
+  "walk": "\f12c",
+  "bike": "\f12d",
+  "gallery": "\f12e",
+  "buildings-1": "\f12f",
+  "building-1": "\f130",
+  "city": "\f131",
+  "drill": "\f132",
+  "hammer": "\f133",
+  "garage": "\f134",
+  "tools-and-utensils": "\f135",
+  "before-after": "\f136",
+  "share": "\f137",
+  "outbox": "\f138",
+  "compare": "\f139",
+  "calendar": "\f13a",
+  "whatsapp": "\f13b",
+  "chat-bubble": "\f13c",
+  "comment": "\f13d",
+  "home-1": "\f13e",
+  "house-3": "\f13f",
+  "house-4": "\f140",
+  "home-2": "\f141",
+  "plus": "\f142",
+  "home-3": "\f143",
+  "home-4": "\f144",
+  "layers": "\f145",
+  "padlock": "\f146",
+  "logout": "\f147",
+  "layers-1": "\f148",
+  "find": "\f149",
+  "upload": "\f14a",
+  "file": "\f14b",
+  "upload-1": "\f14c",
+  "delete": "\f14d",
+  "edit": "\f14e",
+  "location-1": "\f14f",
+  "video-chat": "\f150",
+  "location-pin": "\f151",
+  "close": "\f152",
+  "google": "\f153",
+  "time": "\f154",
+);
+
+.flaticon-user:before {
+  content: map-get($flaticon_just-home-map, "user");
+}
+.flaticon-phone:before {
+  content: map-get($flaticon_just-home-map, "phone");
+}
+.flaticon-magnifiying-glass:before {
+  content: map-get($flaticon_just-home-map, "magnifiying-glass");
+}
+.flaticon-filter:before {
+  content: map-get($flaticon_just-home-map, "filter");
+}
+.flaticon-arrow-down-sign-to-navigate:before {
+  content: map-get($flaticon_just-home-map, "arrow-down-sign-to-navigate");
+}
+.flaticon-location:before {
+  content: map-get($flaticon_just-home-map, "location");
+}
+.flaticon-hotel:before {
+  content: map-get($flaticon_just-home-map, "hotel");
+}
+.flaticon-bath-tub:before {
+  content: map-get($flaticon_just-home-map, "bath-tub");
+}
+.flaticon-bathtub:before {
+  content: map-get($flaticon_just-home-map, "bathtub");
+}
+.flaticon-minus-front:before {
+  content: map-get($flaticon_just-home-map, "minus-front");
+}
+.flaticon-heart:before {
+  content: map-get($flaticon_just-home-map, "heart");
+}
+.flaticon-heart-1:before {
+  content: map-get($flaticon_just-home-map, "heart-1");
+}
+.flaticon-search-house:before {
+  content: map-get($flaticon_just-home-map, "search-house");
+}
+.flaticon-seller:before {
+  content: map-get($flaticon_just-home-map, "seller");
+}
+.flaticon-buy-home:before {
+  content: map-get($flaticon_just-home-map, "buy-home");
+}
+.flaticon-website:before {
+  content: map-get($flaticon_just-home-map, "website");
+}
+.flaticon-computer:before {
+  content: map-get($flaticon_just-home-map, "computer");
+}
+.flaticon-house:before {
+  content: map-get($flaticon_just-home-map, "house");
+}
+.flaticon-rating:before {
+  content: map-get($flaticon_just-home-map, "rating");
+}
+.flaticon-customer:before {
+  content: map-get($flaticon_just-home-map, "customer");
+}
+.flaticon-house-1:before {
+  content: map-get($flaticon_just-home-map, "house-1");
+}
+.flaticon-back:before {
+  content: map-get($flaticon_just-home-map, "back");
+}
+.flaticon-shield:before {
+  content: map-get($flaticon_just-home-map, "shield");
+}
+.flaticon-home:before {
+  content: map-get($flaticon_just-home-map, "home");
+}
+.flaticon-online-meeting:before {
+  content: map-get($flaticon_just-home-map, "online-meeting");
+}
+.flaticon-key:before {
+  content: map-get($flaticon_just-home-map, "key");
+}
+.flaticon-rental:before {
+  content: map-get($flaticon_just-home-map, "rental");
+}
+.flaticon-play:before {
+  content: map-get($flaticon_just-home-map, "play");
+}
+.flaticon-twitter:before {
+  content: map-get($flaticon_just-home-map, "twitter");
+}
+.flaticon-linkedin:before {
+  content: map-get($flaticon_just-home-map, "linkedin");
+}
+.flaticon-facebook:before {
+  content: map-get($flaticon_just-home-map, "facebook");
+}
+.flaticon-instagram:before {
+  content: map-get($flaticon_just-home-map, "instagram");
+}
+.flaticon-bungalow:before {
+  content: map-get($flaticon_just-home-map, "bungalow");
+}
+.flaticon-cottage:before {
+  content: map-get($flaticon_just-home-map, "cottage");
+}
+.flaticon-buildings:before {
+  content: map-get($flaticon_just-home-map, "buildings");
+}
+.flaticon-building:before {
+  content: map-get($flaticon_just-home-map, "building");
+}
+.flaticon-office-building:before {
+  content: map-get($flaticon_just-home-map, "office-building");
+}
+.flaticon-check:before {
+  content: map-get($flaticon_just-home-map, "check");
+}
+.flaticon-paper-plane:before {
+  content: map-get($flaticon_just-home-map, "paper-plane");
+}
+.flaticon-message:before {
+  content: map-get($flaticon_just-home-map, "message");
+}
+.flaticon-pdf:before {
+  content: map-get($flaticon_just-home-map, "pdf");
+}
+.flaticon-tag:before {
+  content: map-get($flaticon_just-home-map, "tag");
+}
+.flaticon-star:before {
+  content: map-get($flaticon_just-home-map, "star");
+}
+.flaticon-star-1:before {
+  content: map-get($flaticon_just-home-map, "star-1");
+}
+.flaticon-walk:before {
+  content: map-get($flaticon_just-home-map, "walk");
+}
+.flaticon-bike:before {
+  content: map-get($flaticon_just-home-map, "bike");
+}
+.flaticon-gallery:before {
+  content: map-get($flaticon_just-home-map, "gallery");
+}
+.flaticon-buildings-1:before {
+  content: map-get($flaticon_just-home-map, "buildings-1");
+}
+.flaticon-building-1:before {
+  content: map-get($flaticon_just-home-map, "building-1");
+}
+.flaticon-city:before {
+  content: map-get($flaticon_just-home-map, "city");
+}
+.flaticon-drill:before {
+  content: map-get($flaticon_just-home-map, "drill");
+}
+.flaticon-hammer:before {
+  content: map-get($flaticon_just-home-map, "hammer");
+}
+.flaticon-garage:before {
+  content: map-get($flaticon_just-home-map, "garage");
+}
+.flaticon-tools-and-utensils:before {
+  content: map-get($flaticon_just-home-map, "tools-and-utensils");
+}
+.flaticon-before-after:before {
+  content: map-get($flaticon_just-home-map, "before-after");
+}
+.flaticon-share:before {
+  content: map-get($flaticon_just-home-map, "share");
+}
+.flaticon-outbox:before {
+  content: map-get($flaticon_just-home-map, "outbox");
+}
+.flaticon-compare:before {
+  content: map-get($flaticon_just-home-map, "compare");
+}
+.flaticon-calendar:before {
+  content: map-get($flaticon_just-home-map, "calendar");
+}
+.flaticon-whatsapp:before {
+  content: map-get($flaticon_just-home-map, "whatsapp");
+}
+.flaticon-chat-bubble:before {
+  content: map-get($flaticon_just-home-map, "chat-bubble");
+}
+.flaticon-comment:before {
+  content: map-get($flaticon_just-home-map, "comment");
+}
+.flaticon-home-1:before {
+  content: map-get($flaticon_just-home-map, "home-1");
+}
+.flaticon-house-3:before {
+  content: map-get($flaticon_just-home-map, "house-3");
+}
+.flaticon-house-4:before {
+  content: map-get($flaticon_just-home-map, "house-4");
+}
+.flaticon-home-2:before {
+  content: map-get($flaticon_just-home-map, "home-2");
+}
+.flaticon-plus:before {
+  content: map-get($flaticon_just-home-map, "plus");
+}
+.flaticon-home-3:before {
+  content: map-get($flaticon_just-home-map, "home-3");
+}
+.flaticon-home-4:before {
+  content: map-get($flaticon_just-home-map, "home-4");
+}
+.flaticon-layers:before {
+  content: map-get($flaticon_just-home-map, "layers");
+}
+.flaticon-padlock:before {
+  content: map-get($flaticon_just-home-map, "padlock");
+}
+.flaticon-logout:before {
+  content: map-get($flaticon_just-home-map, "logout");
+}
+.flaticon-layers-1:before {
+  content: map-get($flaticon_just-home-map, "layers-1");
+}
+.flaticon-find:before {
+  content: map-get($flaticon_just-home-map, "find");
+}
+.flaticon-upload:before {
+  content: map-get($flaticon_just-home-map, "upload");
+}
+.flaticon-file:before {
+  content: map-get($flaticon_just-home-map, "file");
+}
+.flaticon-upload-1:before {
+  content: map-get($flaticon_just-home-map, "upload-1");
+}
+.flaticon-delete:before {
+  content: map-get($flaticon_just-home-map, "delete");
+}
+.flaticon-edit:before {
+  content: map-get($flaticon_just-home-map, "edit");
+}
+.flaticon-location-1:before {
+  content: map-get($flaticon_just-home-map, "location-1");
+}
+.flaticon-video-chat:before {
+  content: map-get($flaticon_just-home-map, "video-chat");
+}
+.flaticon-location-pin:before {
+  content: map-get($flaticon_just-home-map, "location-pin");
+}
+.flaticon-close:before {
+  content: map-get($flaticon_just-home-map, "close");
+}
+.flaticon-google:before {
+  content: map-get($flaticon_just-home-map, "google");
+}
+.flaticon-time:before {
+  content: map-get($flaticon_just-home-map, "time");
+}
