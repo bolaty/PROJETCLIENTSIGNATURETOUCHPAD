@@ -19,18 +19,42 @@
                     <div class="section-content-right">
                         <h3 style="font-size: 35px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(23, 24, 25);">Signature Pad</h3>
                         <div class="text-content" style="font-size: 25px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(23, 24, 25);">Veuillez marque votre signature!</div>
+                        <div class="wg-box  mb-20" *ngIf="Donnee_de_connexion[0].NT_CODENATURESIGNATUREPAD == '2'">
+
+                            <div class="photo-container">
+                                <video #video *ngIf="cameraAvailable" autoplay class="video-preview"></video>
+                                <canvas #canvas style="display: none;"></canvas>
+                              
+                                <button *ngIf="cameraAvailable" (click)="takePhoto()" class="btn-photo">
+                                  📸 Prendre une photo
+                                </button>
+                              
+                                <label *ngIf="!cameraAvailable" class="custom-file-upload">
+                                  📂 Importer une image
+                                  <input type="file" (change)="onFileSelected($event)" accept="image/*">
+                                </label>
+                              
+                                <div *ngIf="photoUrl" class="photo-preview-container">
+                                    <img [src]="photoUrl" class="photo-preview">
+                                    <p class="photo-size">📏 Taille : {{ photoSize }} Ko</p>
+                                </div>
+                               
+                              </div>
+                        </div><br><br>
+                        
 
                         <div class="wg-box  mb-20" >
                             <h4>!</h4>
                            
-                            <canvas #signaturePad width="800px" height="300px" style="border: 5px solid #000; max-width: 100%;"></canvas>
+                           <canvas #signaturePad width="800px" height="300px" style="border: 5px solid #000; max-width: 100%;"></canvas>
                                 
                             <div class="button-submit mt-10">
                                 <button class="tf-button-primary" (click)="clear()" style="background-color: crimson;"  type="button">Effacer<i class="icon-arrow-right-add"></i></button>
                                 <button class="tf-button-primary"  (click)="save()" style="background-color: darkgreen;" type="button">Enregistrer<i class="icon-arrow-right-add"></i></button>
+                                <p *ngIf="signatureSize">📏 Taille : {{ signatureSize }} Ko</p>
                             </div>
                             
-                       
+                            
                         </div>
                         
                         <div class="bottom-page">

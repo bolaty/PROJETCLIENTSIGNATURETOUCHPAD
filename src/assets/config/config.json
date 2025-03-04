@@ -1,6 +1,6 @@
 {
-  "ApiSignaturePad": "http://192.168.1.12:6001/api/",
-  "ApiSignaturePadsend": "http://192.168.1.12:6001/",
+  "ApiSignaturePad": "http://127.0.0.1:6001/api/",
+  "ApiSignaturePadsend": "http://127.0.0.1:6001/",
   "clientName": "Client X",
   "environment": "production"
 }
